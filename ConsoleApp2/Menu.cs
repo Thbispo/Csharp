@@ -1,64 +1,43 @@
-﻿using ConsoleApp2;
+﻿using Roupabox;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using System.Threading;
 using System.Threading.Tasks;
 
-namespace Roupabox
+namespace roupaboxx
 {
     internal class ExibirMenu
     {
-        public void Menu(Produtos varPro)
-        {
-            List<ProdutoCad> listaP = new List<ProdutoCad>();
-            
-                
-                
-                Cabecalho cab = new Cabecalho();
 
+        public void Menu(Produtos varPro, Cliente varCli)
+        {
+            List<ProdutoCad> litsaP = new List<ProdutoCad>();
             while (true)
             {
-                cab.Cabecalho();
+                Console.WriteLine("Digite 0 para Sair");
+                Console.WriteLine("Digite 1 Cadastro de Clientes");
+                Console.WriteLine("Digite 2 Listar Clientes");
+                Console.WriteLine("Digite 3 Cadastro de Produtos");
+                Console.WriteLine("Digite 4 Listar Produtos");
+                int numero = int.Parse(Console.ReadLine());
 
-                Console.WriteLine("Digite 0 para sair.");
-                Console.WriteLine("Digite 1 para Cadastro de Clientes.");
-                Console.WriteLine("Digite 2 para Listar Clientes.");
-                Console.WriteLine("Digite 3 para Cadastro de Produtos.");
-                Console.WriteLine("Digite 4 para Listar Produtos.");
-                Console.WriteLine("\nDigite a opção escolhida:");
-
-                if (!int.TryParse(Console.ReadLine(), out int select))
+                switch (numero)
                 {
-                    Console.WriteLine("Entrada inválida! Digite um número.");
-                    Thread.Sleep(2000);
-                    continue;
-                }
-
-                switch (select)
-                {
-                    case 0:
-                       varCli.cadCliente();
                     case 1:
-                        Console.Clear();
-                        Clientes cadastroCliente = new Clientes();
-                        cadastroCliente.Cadastro();
+
+                        varCli.cadCliente();
                         break;
                     case 2:
-                        Console.WriteLine("Listar clientes ainda não implementado.");
-                        Thread.Sleep(1500);
+                        
                         break;
                     case 3:
-                        varPro.CadProdutos();
-                            break;
-                    case 4:
-                        Console.WriteLine("Listar produtos ainda não implementado.");
-                        Thread.Sleep(1500);
+
+                        varPro.cadProduto();
                         break;
-                    default:
-                        Console.WriteLine("Opção inválida.");
-                        Thread.Sleep(1500);
+                    case 4:
+                        varPro.listarProdutos();
+
                         break;
                 }
             }

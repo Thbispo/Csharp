@@ -44,7 +44,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ClienteCad.cs" />
-    <Compile Include="Clientes.cs" />
+    <Compile Include="Cliente.cs" />
     <Compile Include="Cabecalho.cs" />
     <Compile Include="ProdutoCad.cs" />
     <Compile Include="Produtos.cs" />

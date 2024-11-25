@@ -1,89 +1,101 @@
-﻿using ConsoleApp2;
+﻿using Roupabox;
+using roupaboxx;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Reflection.Emit;
 using System.Text;
-using System.Threading;
 using System.Threading.Tasks;
+
+
 
 namespace Roupabox
 {
+
     internal class Produtos
     {
+
         List<ProdutoCad> listaProdutos = new List<ProdutoCad>();
-        public void Produtoss()
+
+        public ProdutoCad cadProduto()
         {
 
 
-            Console.WriteLine("Bem-vindo ao Cadastro de Produtos!");
-            Console.WriteLine("Digite 1 para criar um novo cadastro.");
-            Console.WriteLine("Digite 2 para voltar ao menu principal.");
-
-            if (!int.TryParse(Console.ReadLine(), out int select) || (select != 1 && select != 2))
-            {
-                Console.WriteLine("Opção inválida! Voltando ao menu principal.");
-                Thread.Sleep(1500);
-                return;
-            }
-
-            if (select == 1)
-            {
-                CadastroDetalhes();
-            }
-        }
-
-        public void CadastroDetalhes()
-        {
             Console.Clear();
-            Console.WriteLine("Registro de Produto:");
-
-            Console.Write("Marca: ");
-            string marca = Console.ReadLine();
-            Produto.marca = marca;
-
-            Console.Write("Descrição: ");
-            string descricao = Console.ReadLine();
+            Console.WriteLine("Registro de Produto");
 
 
-            var Produto = ProdutoCad(descPro);
+            Console.WriteLine("\nDigite a descrição do Produto: ");
+            string descPro = Console.ReadLine();
 
-            Console.Write("Tamanho: ");
-            string tamanho = Console.ReadLine();
-            Produto.tam = tamanho;
 
-            Console.Write("Cor: ");
-            string cor = Console.ReadLine();
-            Produto.corPro = cor;
+            var Produto = new ProdutoCad(descPro);
 
-            Console.Write("Categoria: ");
-            string categoria = Console.ReadLine();
-            Produto.catPro = categoria;
 
-            Console.Write("Valor: ");
-            double valor = double.Parse(Console.ReadLine());
-            Produto.valorPro = valor;
+            Console.WriteLine("\nDigite o marca do Produto: ");
+            string marcaPro = Console.ReadLine();
+            Produto.marcaPro = marcaPro;
 
-            Console.Write("Peso: ");
-            double peso = double.Parse(Console.ReadLine());
+
+            Console.WriteLine("\nDigite tamanho (P M G GG XGG do Produto: ");
+            string tamPro = Console.ReadLine();
+            Produto.tamPro = tamPro;
+
+            Console.WriteLine("\nDigite a cor do Produto: ");
+            string corPro = Console.ReadLine();
+            Produto.corPro = corPro;
+
+            Console.WriteLine("\nDigite a categoria do Produto: ");
+            string catPro = Console.ReadLine();
+            Produto.catPro = catPro;
+
+
+            Console.WriteLine("\nDigite o valor do Produto: ");
+            double valPro = double.Parse(Console.ReadLine());
+            Produto.valPro = valPro;
+
+            Console.WriteLine("\nDigite o peso do Produto: ");
+            double pesoPro = double.Parse(Console.ReadLine());
             Produto.pesoPro = pesoPro;
 
-            listaProdutos.Add(Produto);
 
-            Console.WriteLine("\nCadastro concluído!");
-
-            foreach (var produto in listaProdutos)
-            //            nova variavel
+           
+            public void listarProdutos()
             {
-                Console.WriteLine ($"Descrição:{produto.descPro}," +
-                $" " + $"Valor:{produto.valPro} ");
+                Console.Clear();
+                Console.WriteLine("Lista de Produtos Cadastrados");
+
+                if (listaProdutos != null && listaProdutos.Any())
+                {
+                    foreach (var item in listaProdutos)
+                    {
+                        Console.WriteLine($"Descrição: {item.descPro}, Valor: {item.valPro}, Peso: {item.pesoPro}");
+                    }
+                }
+                else
+                {
+                    Console.WriteLine("Nenhum produto cadastrado.");
+                }
+
+                Console.WriteLine("\nDigite uma tecla para voltar para o menu principal.");
+                Console.ReadKey();
+                Console.Clear();
+
+                cabec variavelCabecalho = new cabec();
+                variavelCabecalho.cabecalho();
             }
+          
 
-            Console.WriteLine($"Marca: {marca}, Tamanho: {tamanho}, Cor: {cor}, Categoria: {categoria}, Valor: {valor}");
-            Thread.Sleep(2000);
-            Console.Clear();
+            return Produto;
 
-            Cabecalho variavel = new Cabecalho();
-            variavelCabecalho.Cabecalho();
         }
+
+       
+
+
+
+
+
+
     }
 }
