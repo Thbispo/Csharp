@@ -1,0 +1,10 @@
+C:\Users\thiago.bsouza13\Documents\Csharp\API\obj\Debug\API.csproj.AssemblyReference.cache
+C:\Users\thiago.bsouza13\Documents\Csharp\API\obj\Debug\API.csproj.CoreCompileInputs.cache
+C:\Users\thiago.bsouza13\Documents\Csharp\API\bin\Debug\API.exe.config
+C:\Users\thiago.bsouza13\Documents\Csharp\API\bin\Debug\API.exe
+C:\Users\thiago.bsouza13\Documents\Csharp\API\bin\Debug\API.pdb
+C:\Users\thiago.bsouza13\Documents\Csharp\API\bin\Debug\Newtonsoft.Json.dll
+C:\Users\thiago.bsouza13\Documents\Csharp\API\bin\Debug\Newtonsoft.Json.xml
+C:\Users\thiago.bsouza13\Documents\Csharp\API\obj\Debug\API.csproj.Up2Date
+C:\Users\thiago.bsouza13\Documents\Csharp\API\obj\Debug\API.exe
+C:\Users\thiago.bsouza13\Documents\Csharp\API\obj\Debug\API.pdb
