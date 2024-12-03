@@ -1,0 +1,10 @@
+C:\Users\thiago.bsouza13\Documents\Csharp\Formulario.Aula1.2\bin\Debug\Formulario.Aula1.2.exe.config
+C:\Users\thiago.bsouza13\Documents\Csharp\Formulario.Aula1.2\bin\Debug\Formulario.Aula1.2.exe
+C:\Users\thiago.bsouza13\Documents\Csharp\Formulario.Aula1.2\bin\Debug\Formulario.Aula1.2.pdb
+C:\Users\thiago.bsouza13\Documents\Csharp\Formulario.Aula1.2\obj\Debug\Formulario.Aula1.2.csproj.AssemblyReference.cache
+C:\Users\thiago.bsouza13\Documents\Csharp\Formulario.Aula1.2\obj\Debug\Formulario.Aula1._2.Form1.resources
+C:\Users\thiago.bsouza13\Documents\Csharp\Formulario.Aula1.2\obj\Debug\Formulario.Aula1._2.Properties.Resources.resources
+C:\Users\thiago.bsouza13\Documents\Csharp\Formulario.Aula1.2\obj\Debug\Formulario.Aula1.2.csproj.GenerateResource.cache
+C:\Users\thiago.bsouza13\Documents\Csharp\Formulario.Aula1.2\obj\Debug\Formulario.Aula1.2.csproj.CoreCompileInputs.cache
+C:\Users\thiago.bsouza13\Documents\Csharp\Formulario.Aula1.2\obj\Debug\Formulario.Aula1.2.exe
+C:\Users\thiago.bsouza13\Documents\Csharp\Formulario.Aula1.2\obj\Debug\Formulario.Aula1.2.pdb
